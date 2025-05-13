@@ -12,6 +12,7 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar"
+import Link from "next/link"
 
 
 
@@ -84,12 +85,12 @@ export function NavMain({
                     <div className="ml-4 pl-2 border-l border-sidebar-border">
                       {(item.items ?? []).map((subItem) => (
                         <SidebarMenuItem key={subItem.title}>
-                          <a
+                          <Link
                             href={subItem.url}
                             className="flex w-full items-center gap-2 font-medium rounded-md p-2 text-sm hover:bg-sidebar-accent"
                           >
                             <span>{subItem.title}</span>
-                          </a>
+                          </Link>
                         </SidebarMenuItem>
                       ))}
                     </div>
@@ -102,12 +103,12 @@ export function NavMain({
             return (
               <SidebarMenuItem key={item.title}>
                 <SidebarMenuButton asChild tooltip={item.title}>
-                  <a href={item.url} className="flex items-center gap-2">
+                  <Link href={item.url} className="flex items-center gap-2">
                     {item.icon && <item.icon className="h-5 w-5" />}
                     <span className="text-lg font-medium ml-1 group-data-[collapsible=icon]:hidden">
                       {item.title}
                     </span>
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             )
