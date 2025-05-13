@@ -32,72 +32,73 @@ const data = {
     },
   ],
   navMain: [
-    {
-      title: "Dashboard",
-      url: "#",
-      icon: PieChart,
-      isActive: true,
-      items: [],
-    },
-    {
-      title: "Productos",
-      url: "#",
-      icon: Frame,
-      items: [],
-    },
-    {
-      title: "POS",
-      url: "#",
-      icon: SquareTerminal,
-      items: [
-        {
-          title: "Nueva venta",
-          url: "#",
-        },
-        {
-          title: "Historial",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Ventas",
-      url: "#",
-      icon: Map,
-      items: [],
-    },
-    {
-      title: "Reportes",
-      url: "#",
-      icon: BookOpen,
-      items: [],
-    },
-    {
-      title: "Finanzas",
-      url: "#",
-      icon: AudioWaveform,
-      items: [
-        {
-          title: "Nueva caja",
-          url: "#",
-        },
-        {
-          title: "Caja chica",
-          url: "#",
-        },
-        {
-          title: "Flujo",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Ajustes",
-      url: "#",
-      icon: Settings2,
-      items: [],
-    },
-  ],
+  {
+    title: "Dashboard",
+    url: "/dashboard",
+    icon: PieChart,
+    isActive: true,
+    items: [],
+  },
+  {
+    title: "Productos",
+    url: "/productos",
+    icon: Frame,
+    items: [],
+  },
+  {
+    title: "POS",
+    url: "#",
+    icon: SquareTerminal,
+    items: [
+      {
+        title: "Nueva venta",
+        url: "/pos/nueva-venta",
+      },
+      {
+        title: "Historial",
+        url: "/pos/historial",
+      },
+    ],
+  },
+  {
+    title: "Ventas",
+    url: "/ventas",
+    icon: Map,
+    items: [],
+  },
+  {
+    title: "Reportes",
+    url: "/reportes",
+    icon: BookOpen,
+    items: [],
+  },
+  {
+    title: "Finanzas",
+    url: "#",
+    icon: AudioWaveform,
+    items: [
+      {
+        title: "Nueva caja",
+        url: "/finanzas/nueva-caja",
+      },
+      {
+        title: "Caja chica",
+        url: "/finanzas/caja-chica",
+      },
+      {
+        title: "Flujo",
+        url: "/finanzas/flujo",
+      },
+    ],
+  },
+  {
+    title: "Ajustes",
+    url: "/ajustes",
+    icon: Settings2,
+    items: [],
+  },
+],
+
   projects: [],
 }
 
