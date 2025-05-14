@@ -13,6 +13,8 @@ import {
   Banknote,
 } from "lucide-react"
 
+import { ModeToggle } from "@/components/mode-toggle"
+
 import { NavMain } from "./nav-main"
 import { NavUser } from "./nav-user"
 import { TeamSwitcher } from "./team-switcher"
@@ -29,7 +31,7 @@ const data = {
     {
       name: "Mi Empresa",
       logo: GalleryVerticalEnd,
-      plan: "Enterprise",
+      plan: "asd",
     },
   ],
   navMain: [
@@ -120,9 +122,10 @@ const data = {
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
-      </SidebarHeader>
+      <SidebarHeader className="flex items-center justify-between px-4 py-3">
+      <h1 className="text-2xl font-bold tracking-tight text-primary">Matrioska</h1>
+      <ModeToggle />
+    </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
       </SidebarContent>
