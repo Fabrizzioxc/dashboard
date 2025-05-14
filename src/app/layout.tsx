@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Matrioska - Dashboard",
+  title: "Dashboard - Matrioska",
   description: "Hecho por Fabrizzio",
 };
 

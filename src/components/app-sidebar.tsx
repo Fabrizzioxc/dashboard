@@ -63,7 +63,7 @@ const data = {
     },
     {
       title: "POS",
-      url: "#",
+      url: "/pos",
       icon: SquareTerminal,
       items: [
         {
