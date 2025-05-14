@@ -49,11 +49,11 @@ const data = {
       items: [
         {
           title: "Agregar producto",
-          url: "/productos/agregar",
+          url: "/productos/nuevo",
         },
         {
           title: "Lista de productos",
-          url: "/productos/lista",
+          url: "/productos",
         },
         {
           title: "Categorías de productos",

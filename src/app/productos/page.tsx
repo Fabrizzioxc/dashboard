@@ -203,7 +203,7 @@ export default function ProductosPage() {
             <h1 className="text-2xl font-bold">Lista de Productos</h1>
             <Button asChild>
               <Link href="/productos/nuevo">
-                <Plus className="mr-2 h-4 w-4" /> Nuevo Producto
+                <Plus className="mr-2 h-4 w-4" /> Agregar Producto
               </Link>
             </Button>
           </div>
