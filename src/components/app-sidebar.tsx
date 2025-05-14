@@ -10,6 +10,7 @@ import {
   PieChart,
   Settings2,
   SquareTerminal,
+  Banknote,
 } from "lucide-react"
 
 import { NavMain } from "./nav-main"
@@ -44,9 +45,18 @@ const data = {
       url: "/productos",
       icon: Frame,
       items: [
-        { title: "Agregar productos", url: "/productos/agregar" },
-        { title: "Lista de productos", url: "/productos/lista" },
-        { title: "Lista de categorías", url: "/productos/categorias" },
+        {
+          title: "Agregar producto",
+          url: "/productos/agregar",
+        },
+        {
+          title: "Lista de productos",
+          url: "/productos/lista",
+        },
+        {
+          title: "Categorías de productos",
+          url: "/productos/categorias",
+        },
       ],
     },
     {
@@ -54,8 +64,18 @@ const data = {
       url: "#",
       icon: SquareTerminal,
       items: [
-        { title: "Nueva venta", url: "/pos/nueva-venta" },
-        { title: "Historial", url: "/pos/historial" },
+        {
+          title: "Nueva venta",
+          url: "/pos/nueva-venta",
+        },
+        {
+          title: "Historial de ventas",
+          url: "/pos/historial",
+        },
+        {
+          title: "Devoluciones",
+          url: "/pos/devoluciones",
+        },
       ],
     },
     {
@@ -63,8 +83,18 @@ const data = {
       url: "/reportes",
       icon: BookOpen,
       items: [
-        { title: "Generar reporte", url: "/reportes/generar" },
-        { title: "Últimos reportes", url: "/reportes/ultimos" },
+        {
+          title: "Generar reporte de productos",
+          url: "/reportes/productos",
+        },
+        {
+          title: "Generar reporte de ventas",
+          url: "/reportes/ventas",
+        },
+        {
+          title: "Historial de reportes",
+          url: "/reportes/historial",
+        },
       ],
     },
     {
@@ -72,9 +102,18 @@ const data = {
       url: "#",
       icon: AudioWaveform,
       items: [
-        { title: "Nueva caja", url: "/finanzas/nueva-caja" },
-        { title: "Caja chica", url: "/finanzas/caja-chica" },
-        { title: "Flujo", url: "/finanzas/flujo" },
+        {
+          title: "Apertura de caja",
+          url: "/finanzas/apertura-caja",
+        },
+        {
+          title: "Cierre de caja",
+          url: "/finanzas/cierre-caja",
+        },
+        {
+          title: "Movimientos",
+          url: "/finanzas/movimientos",
+        },
       ],
     },
     {
@@ -84,8 +123,10 @@ const data = {
       items: [],
     },
   ],
+
   projects: [],
 }
+
 
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
