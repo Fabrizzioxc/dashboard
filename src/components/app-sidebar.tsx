@@ -81,21 +81,9 @@ const data = {
     {
       title: "Reportes",
       url: "/reportes",
-      icon: BookOpen,
-      items: [
-        {
-          title: "Generar reporte de productos",
-          url: "/reportes/productos",
-        },
-        {
-          title: "Generar reporte de ventas",
-          url: "/reportes/ventas",
-        },
-        {
-          title: "Historial de reportes",
-          url: "/reportes/historial",
-        },
-      ],
+      icon: PieChart,
+      isActive: true,
+      items: [],
     },
     {
       title: "Finanzas",
