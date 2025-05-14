@@ -122,10 +122,13 @@ const data = {
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader className="flex items-center justify-between px-4 py-3">
-      <h1 className="text-2xl font-bold tracking-tight text-primary">Matrioska</h1>
+      <SidebarHeader className="flex flex-col items-center gap-2 px-4 py-3">
+      <h1 className="text-3xl font-extrabold tracking-tight text-primary leading-tight">
+        Matrioska
+      </h1>
       <ModeToggle />
     </SidebarHeader>
+
       <SidebarContent>
         <NavMain items={data.navMain} />
       </SidebarContent>
