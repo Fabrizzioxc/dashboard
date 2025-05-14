@@ -96,7 +96,7 @@ const data = {
         },
         {
           title: "Cierre de caja",
-          url: "/caja/cierre-caja",
+          url: "/caja/cierre",
         },
         {
           title: "Movimientos",
