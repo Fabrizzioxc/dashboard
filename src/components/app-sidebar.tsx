@@ -86,21 +86,21 @@ const data = {
       items: [],
     },
     {
-      title: "Finanzas",
+      title: "Caja",
       url: "#",
       icon: AudioWaveform,
       items: [
         {
           title: "Apertura de caja",
-          url: "/finanzas/apertura-caja",
+          url: "/caja/apertura",
         },
         {
           title: "Cierre de caja",
-          url: "/finanzas/cierre-caja",
+          url: "/caja/cierre-caja",
         },
         {
           title: "Movimientos",
-          url: "/finanzas/movimientos",
+          url: "/caja/movimientos",
         },
       ],
     },
