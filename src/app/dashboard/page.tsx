@@ -326,7 +326,7 @@ export default function DashboardPage() {
           <CardFooter className="flex justify-between">
             <Button variant="outline">Exportar</Button>
             <Button asChild>
-              <Link href="/ventas">Ver todas las ventas</Link>
+              <Link href="/pos/historial">Ver todas las ventas</Link>
             </Button>
           </CardFooter>
         </Card>

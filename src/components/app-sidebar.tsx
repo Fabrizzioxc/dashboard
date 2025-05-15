@@ -11,6 +11,7 @@ import {
   Settings2,
   SquareTerminal,
   Banknote,
+  Building2,
 } from "lucide-react"
 
 import { ModeToggle } from "@/components/mode-toggle"
@@ -123,9 +124,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader className="flex flex-col items-center gap-2 px-4 py-3">
-      <h1 className="text-3xl font-extrabold tracking-tight text-primary leading-tight">
-        Matrioska
-      </h1>
+      <div className="flex items-center gap-2 w-full">
+        <Building2 className="h-5 w-5 text-primary shrink-0" />
+        <h1 className="text-3xl font-extrabold tracking-tight text-primary leading-tight whitespace-nowrap overflow-hidden">
+          Matrioska
+        </h1>
+      </div>
       <ModeToggle />
     </SidebarHeader>
 
